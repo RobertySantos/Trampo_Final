@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  position: relative;
+  min-height: 650px;
+}
+
+img.top-desktop-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  z-index: -1;
+}
+
+img.top-mobile-background {
+  display: none;
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1.5em;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+@media screen and (max-width: 412px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+header a {
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+}
+header a h2 {
+  color: #21ac9e;
+  font-size: 1.7em;
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+main {
+  min-height: 100vh;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+main .wrapper {
+  position: relative;
+  width: 50%;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border-radius: 0.5em;
+}
+main .wrapper h1 {
+  font-family: "Montserrat";
+  text-align: center;
+  background: #1ac3b2;
+  color: #fff;
+  padding: 0.4em;
+  font-size: 2.3em;
+  font-weight: 600;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  margin: 0;
+}
+main .wrapper h2 {
+  font-family: "Montserrat";
+  font-size: 2.3em;
+  text-align: center;
+}
+main .wrapper h3 {
+  font: 1.8em "Montserrat";
+  text-align: center;
+}
+main .wrapper a {
+  text-decoration: none;
+}
+main .wrapper form {
+  padding: 2em 0;
+  padding-top: 6em;
+}
+main .wrapper .mdl-cell {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+main .wrapper .mdl-textfield {
+  width: 307px;
+}
+main .wrapper input,
+main .wrapper label {
+  font-size: 1.3em;
+}
+
+.mdl-button {
+  margin: 0 0.5em;
+}
+
+.back-button {
+  visibility: hidden;
+}
+
+img.desktop-bottom-background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+
+.entrar {
+  width: 89.56px;
+  border: 0;
+  border-radius: 3px;
+  height: 36px;
+  background: #16968a;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.entrar:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1150px) {
+  .top-desktop-background {
+    display: none;
+  }
+
+  .desktop-bottom-background {
+    position: relative !important;
+    bottom: 0 !important;
+  }
+
+  header {
+    padding-left: 1em !important;
+  }
+  header h2 {
+    color: #fff !important;
+    font-size: 2em !important;
+  }
+
+  .wrapper,
+main {
+    padding: 0;
+  }
+
+  .wrapper {
+    position: relative !important;
+    width: 100% !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .mdl-textfield {
+    width: 90% !important;
+    max-width: 307px !important;
+  }
+
+  form {
+    padding: 0 !important;
+  }
+
+  main {
+    padding-top: 6em;
+  }
+  main h1 {
+    color: #1ac3b2 !important;
+    background: none !important;
+  }
+
+  .top-mobile-background {
+    display: block !important;
+    position: absolute;
+    z-index: -1;
+    max-width: 410px;
+    max-height: 120px;
+    width: 100%;
+  }
+
+  .desktop-bottom-background {
+    display: none;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
